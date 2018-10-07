@@ -1,0 +1,234 @@
+// NAVBAR
+// ===================================================
+header#navbar
+    #navbar-container.boxed
+        // Brand logo & name
+        // ================================
+        .navbar-header
+            a.navbar-brand(href='index.html')
+                img.brand-icon(src=base_url+'assets/nifty/img/logo.png', alt='Nifty Logo')
+                .brand-title
+                    span.brand-text Nifty
+        // ================================
+        // End brand logo & name
+        // Navbar Dropdown
+        // ================================
+        .navbar-content
+            ul.nav.navbar-top-links
+                // Navigation toogle button
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                li.tgl-menu-btn
+                    a.mainnav-toggle(href='#')
+                        i.demo-pli-list-view
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // End Navigation toogle button
+                // Search
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                li
+                    .custom-search-form
+                        label.btn.btn-trans(for='search-input', data-toggle='collapse', data-target='#nav-searchbox')
+                            i.demo-pli-magnifi-glass
+                        form
+                            #nav-searchbox.search-container.collapse
+                                input#search-input.form-control(type='text', placeholder='Type for search...')
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // End Search
+            ul.nav.navbar-top-links
+                // Mega dropdown
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                li.mega-dropdown
+                    a.mega-dropdown-toggle(href='#')
+                        i.demo-pli-layout-grid
+                    .dropdown-menu.mega-dropdown-menu
+                        .row
+                            .col-sm-4.col-md-3
+                                // Mega menu list
+                                ul.list-unstyled
+                                    li.dropdown-header
+                                        i.demo-pli-file.icon-lg.icon-fw
+                                    li
+                                        a(href='#') Profile
+                                    li
+                                        a(href='#') Search Result
+                                    li
+                                        a(href='#') FAQ
+                                    li
+                                        a(href='#') Sreen Lock
+                                    li
+                                        a(href='#') Maintenance
+                                    li
+                                        a(href='#') Invoice
+                                    li
+                                        a.disabled(href='#') Disabled
+                            .col-sm-4.col-md-3
+                                // Mega menu list
+                                ul.list-unstyled
+                                    li.dropdown-header
+                                        i.demo-pli-mail.icon-lg.icon-fw
+                                    li
+                                        a(href='#')
+                                            span.pull-right.label.label-danger Hot
+                                    li
+                                        a(href='#') Read Message
+                                    li
+                                        a(href='#') Compose
+                                    li
+                                        a(href='#') Template
+                                p.pad-top.text-main.text-sm.text-uppercase.text-bold
+                                    i.icon-lg.demo-pli-calendar-4.icon-fw
+                                p.pad-top.mar-top.bord-top.text-sm
+                            .col-sm-4.col-md-3
+                                // Mega menu list
+                                ul.list-unstyled
+                                    li
+                                        a.media.mar-btm(href='#')
+                                            span.badge.badge-success.pull-right 90%
+                                            .media-left
+                                                i.demo-pli-data-settings.icon-2x
+                                            .media-body
+                                                p.text-semibold.text-main.mar-no Data Backup
+                                                small.text-muted This is the item description
+                                    li
+                                        a.media.mar-btm(href='#')
+                                            .media-left
+                                                i.demo-pli-support.icon-2x
+                                            .media-body
+                                                p.text-semibold.text-main.mar-no Support
+                                                small.text-muted This is the item description
+                                    li
+                                        a.media.mar-btm(href='#')
+                                            .media-left
+                                                i.demo-pli-computer-secure.icon-2x
+                                            .media-body
+                                                p.text-semibold.text-main.mar-no Security
+                                                small.text-muted This is the item description
+                                    li
+                                        a.media.mar-btm(href='#')
+                                            .media-left
+                                                i.demo-pli-map-2.icon-2x
+                                            .media-body
+                                                p.text-semibold.text-main.mar-no Location
+                                                small.text-muted This is the item description
+                            .col-sm-12.col-md-3
+                                p.dropdown-header
+                                    i.demo-pli-file-jpg.icon-lg.icon-fw
+                                .row.img-gallery
+                                    .col-xs-4
+                                        img.img-responsive(src=base_url+'assets/nifty/img/thumbs/img-1.jpg', alt='thumbs')
+                                    .col-xs-4
+                                        img.img-responsive(src=base_url+'assets/nifty/img/thumbs/img-3.jpg', alt='thumbs')
+                                    .col-xs-4
+                                        img.img-responsive(src=base_url+'assets/nifty/img/thumbs/img-2.jpg', alt='thumbs')
+                                    .col-xs-4
+                                        img.img-responsive(src=base_url+'assets/nifty/img/thumbs/img-4.jpg', alt='thumbs')
+                                    .col-xs-4
+                                        img.img-responsive(src=base_url+'assets/nifty/img/thumbs/img-6.jpg', alt='thumbs')
+                                    .col-xs-4
+                                        img.img-responsive(src=base_url+'assets/nifty/img/thumbs/img-5.jpg', alt='thumbs')
+                                a.btn.btn-block.btn-primary(href='#') Browse Gallery
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // End mega dropdown
+                // Notification dropdown
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        i.demo-pli-bell
+                        span.badge.badge-header.badge-danger
+                    // Notification dropdown menu
+                    .dropdown-menu.dropdown-menu-md.dropdown-menu-right
+                        .nano.scrollable
+                            .nano-content
+                                ul.head-list
+                                    li
+                                        a.media.add-tooltip(href='#', data-title='Used space : 95%', data-container='body', data-placement='bottom')
+                                            .media-left
+                                                i.demo-pli-data-settings.icon-2x.text-main
+                                            .media-body
+                                                p.text-nowrap.text-main.text-semibold HDD is full
+                                                .progress.progress-sm.mar-no
+                                                    .progress-bar.progress-bar-danger(style='width: 95%;')
+                                                        span.sr-only 95% Complete
+                                    li
+                                        a.media(href='#')
+                                            .media-left
+                                                i.demo-pli-file-edit.icon-2x
+                                            .media-body
+                                                p.mar-no.text-nowrap.text-main.text-semibold Write a news article
+                                                small Last Update 8 hours ago
+                                    li
+                                        a.media(href='#')
+                                            span.label.label-info.pull-right New
+                                            .media-left
+                                                i.demo-pli-speech-bubble-7.icon-2x
+                                            .media-body
+                                                p.mar-no.text-nowrap.text-main.text-semibold Comment Sorting
+                                                small Last Update 8 hours ago
+                                    li
+                                        a.media(href='#')
+                                            .media-left
+                                                i.demo-pli-add-user-star.icon-2x
+                                            .media-body
+                                                p.mar-no.text-nowrap.text-main.text-semibold New User Registered
+                                                small 4 minutes ago
+                                    li
+                                        a.media(href='#')
+                                            .media-left
+                                                img.img-circle.img-sm(alt='Profile Picture', src=base_url+'assets/nifty/img/profile-photos/9.png')
+                                            .media-body
+                                                p.mar-no.text-nowrap.text-main.text-semibold Lucy sent you a message
+                                                small 30 minutes ago
+                                    li
+                                        a.media(href='#')
+                                            .media-left
+                                                img.img-circle.img-sm(alt='Profile Picture', src=base_url+'assets/nifty/img/profile-photos/3.png')
+                                            .media-body
+                                                p.mar-no.text-nowrap.text-main.text-semibold Jackson sent you a message
+                                                small 40 minutes ago
+                        // Dropdown footer
+                        .pad-all.bord-top
+                            a.btn-link.text-main.box-block(href='#')
+                                i.pci-chevron.chevron-right.pull-right
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // End notifications dropdown
+                // User dropdown
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                li#dropdown-user.dropdown
+                    a.dropdown-toggle.text-right(href='#', data-toggle='dropdown')
+                        span.ic-user.pull-right
+                            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            // You can use an image instead of an icon.
+                            // <img class="img-circle img-user media-object" src="img/profile-photos/1.png" alt="Profile Picture">
+                            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            i.demo-pli-male
+                        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        // You can also display a user name in the navbar.
+                        // <div class="username hidden-xs">Aaron Chavez</div>
+                        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    .dropdown-menu.dropdown-menu-sm.dropdown-menu-right.panel-default
+                        ul.head-list
+                            li
+                                a(href='#')
+                                    i.demo-pli-male.icon-lg.icon-fw
+                            li
+                                a(href='#')
+                                    span.badge.badge-danger.pull-right 9
+                                    i.demo-pli-mail.icon-lg.icon-fw
+                            li
+                                a(href='#')
+                                    span.label.label-success.pull-right New
+                                    i.demo-pli-gear.icon-lg.icon-fw
+                            li
+                                a(href='#')
+                                    i.demo-pli-computer-secure.icon-lg.icon-fw
+                            li
+                                a(href='pages-login.html')
+                                    i.demo-pli-unlock.icon-lg.icon-fw
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // End user dropdown
+                li
+                    a.aside-toggle(href='#')
+                        i.demo-pli-dot-vertical
+        // ================================
+        // End Navbar Dropdown
+// ===================================================
+// END NAVBAR

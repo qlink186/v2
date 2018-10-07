@@ -1,0 +1,454 @@
+// CONTENT CONTAINER
+// ===================================================
+#content-container
+    #page-head
+        .pad-all.text-center
+            h3 Welcome back to the Dashboard.
+            p1
+                p
+    // Page content
+    // ===================================================
+    #page-content
+        .row
+            .col-lg-7
+                // Network Line Chart
+                // ===================================================
+                #demo-panel-network.panel
+                    .panel-heading
+                        .panel-control
+                            button#demo-panel-network-refresh.btn.btn-default.btn-active-primary(data-toggle='panel-overlay', data-target='#demo-panel-network')
+                                i.demo-psi-repeat-2
+                            .dropdown
+                                button.dropdown-toggle.btn.btn-default.btn-active-primary(data-toggle='dropdown', aria-expanded='false')
+                                    i.demo-psi-dot-vertical
+                                ul.dropdown-menu.dropdown-menu-right
+                                    li
+                                        a(href='#') Action
+                                    li
+                                        a(href='#') Another action
+                                    li
+                                        a(href='#') Something else here
+                                    li.divider
+                                    li
+                                        a(href='#') Separated link
+                        h3.panel-title Network
+                    // chart placeholder
+                    .pad-all
+                        #demo-chart-network(style='height: 255px')
+                    // Chart information
+                    .panel-body
+                        .row
+                            .col-lg-8
+                                p.text-semibold.text-uppercase.text-main CPU Temperature
+                                .row
+                                    .col-xs-5
+                                        .media
+                                            .media-left
+                                                span.text-3x.text-thin.text-main 43.7
+                                            .media-body
+                                                p.mar-no &deg;C
+                                    .col-xs-7.text-sm
+                                        p
+                                            span Min Values
+                                            span.pad-lft.text-semibold
+                                                span.text-lg 27&deg;
+                                                span.labellabel-success.mar-lft
+                                                    i.pci-caret-down.text-success
+                                                    smal - 20
+                                        p
+                                            span Max Values
+                                            span.pad-lft.text-semibold
+                                                span.text-lg 69&deg;
+                                                span.labellabel-danger.mar-lft
+                                                    i.pci-caret-up.text-danger
+                                                    smal + 57
+                                hr
+                                .pad-rgt
+                                    p.text-semibold.text-uppercase.text-main Today Tips
+                                    p.text-muted.mar-top
+                            .col-lg-4
+                                p.text-uppercase.text-semibold.text-main Bandwidth Usage
+                                ul.list-unstyled
+                                    li
+                                        .media.pad-btm
+                                            .media-left
+                                                span.text-2x.text-thin.text-main 754.9
+                                            .media-body
+                                                p.mar-no Mbps
+                                    li.pad-btm
+                                        .clearfix
+                                            p.pull-left.mar-no Income
+                                            p.pull-right.mar-no 70%
+                                        .progress.progress-sm
+                                            .progress-bar.progress-bar-info(style='width: 70%;')
+                                                span.sr-only 70% Complete
+                                    li
+                                        .clearfix
+                                            p.pull-left.mar-no Outcome
+                                            p.pull-right.mar-no 10%
+                                        .progress.progress-sm
+                                            .progress-bar.progress-bar-primary(style='width: 10%;')
+                                                span.sr-only 10% Complete
+                // ===================================================
+                // End network line chart
+            .col-lg-5
+                .row
+                    .col-sm-6.col-lg-6
+                        // Sparkline Area Chart
+                        .panel.panel-success.panel-colorful
+                            .pad-all
+                                p.text-lg.text-semibold
+                                    i.demo-pli-data-storage.icon-fw
+                                p.mar-no
+                                    span.pull-right.text-bold 132Gb
+                                p.mar-no
+                                    span.pull-right.text-bold 1,45Gb
+                            .pad-top.text-center
+                                // Placeholder
+                                #demo-sparkline-area.sparklines-full-content
+                    .col-sm-6.col-lg-6
+                        // Sparkline Line Chart
+                        .panel.panel-info.panel-colorful
+                            .pad-all
+                                p.text-lg.text-semibold Earning
+                                p.mar-no
+                                    span.pull-right.text-bold $764
+                                p.mar-no
+                                    span.pull-right.text-bold $1,332
+                            .pad-top.text-center
+                                // Placeholder
+                                #demo-sparkline-line.sparklines-full-content
+                .row
+                    .col-sm-6.col-lg-6
+                        // Sparkline bar chart
+                        .panel.panel-purple.panel-colorful
+                            .pad-all
+                                p.text-lg.text-semibold
+                                    i.demo-pli-basket-coins.icon-fw
+                                p.mar-no
+                                    span.pull-right.text-bold $764
+                                p.mar-no
+                                    span.pull-right.text-bold $1,332
+                            .text-center
+                                // Placeholder
+                                #demo-sparkline-bar.box-inline
+                    .col-sm-6.col-lg-6
+                        // Sparkline pie chart
+                        .panel.panel-warning.panel-colorful
+                            .pad-all
+                                p.text-lg.text-semibold Task Progress
+                                p.mar-no
+                                    span.pull-right.text-bold 34
+                                p.mar-no
+                                    span.pull-right.text-bold 79
+                            .pad-all
+                                .pad-btm
+                                    .progress.progress-sm
+                                        .progress-bar.progress-bar-light(style='width: 45%;')
+                                            span.sr-only 45%
+                                .pad-btm
+                                    .progress.progress-sm
+                                        .progress-bar.progress-bar-light(style='width: 89%;')
+                                            span.sr-only 89%
+                // Extra Small Weather Widget
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                .panel
+                    .panel-body.text-center.clearfix
+                        .col-sm-4.pad-top
+                            .text-lg
+                                p.text-5x.text-thin.text-main 95
+                            p.text-sm.text-bold.text-uppercase New Friends
+                        .col-sm-8
+                            button.btn.btn-pink.mar-ver View Details
+                            p.text-xs Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            ul.list-unstyled.text-center.bord-top.pad-top.mar-no.row
+                                li.col-xs-4
+                                    span.text-lg.text-semibold.text-main 1,345
+                                    p.text-sm.text-muted.mar-no Following
+                                li.col-xs-4
+                                    span.text-lg.text-semibold.text-main 23K
+                                    p.text-sm.text-muted.mar-no Followers
+                                li.col-xs-4
+                                    span.text-lg.text-semibold.text-main 278
+                                    p.text-sm.text-muted.mar-no Post
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // End Extra Small Weather Widget
+        .row
+            .col-md-3
+                .panel.panel-warning.panel-colorful.media.middle.pad-all
+                    .media-left
+                        .pad-hor
+                            i.demo-pli-file-word.icon-3x
+                    .media-body
+                        p.text-2x.mar-no.text-semibold 241
+                        p.mar-no Documents
+            .col-md-3
+                .panel.panel-info.panel-colorful.media.middle.pad-all
+                    .media-left
+                        .pad-hor
+                            i.demo-pli-file-zip.icon-3x
+                    .media-body
+                        p.text-2x.mar-no.text-semibold 241
+                        p.mar-no Zip Files
+            .col-md-3
+                .panel.panel-mint.panel-colorful.media.middle.pad-all
+                    .media-left
+                        .pad-hor
+                            i.demo-pli-camera-2.icon-3x
+                    .media-body
+                        p.text-2x.mar-no.text-semibold 241
+                        p.mar-no Photos
+            .col-md-3
+                .panel.panel-danger.panel-colorful.media.middle.pad-all
+                    .media-left
+                        .pad-hor
+                            i.demo-pli-video.icon-3x
+                    .media-body
+                        p.text-2x.mar-no.text-semibold 241
+                        p.mar-no Videos
+        .row
+            .col-sm-6.col-lg-4
+                // List Todo
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                .panel.panel-trans
+                    .panel-heading
+                        h3.panel-title To do list
+                    .pad-ver
+                        ul.list-group.bg-trans.list-todo.mar-no
+                            li.list-group-item
+                                input#demo-todolist-1.magic-checkbox(type='checkbox')
+                                label(for='demo-todolist-1')
+                                    span
+                                        span.label.label-danger Important
+                            li.list-group-item
+                                input#demo-todolist-2.magic-checkbox(type='checkbox', checked='')
+                                label(for='demo-todolist-2')
+                                    span Do some work
+                            li.list-group-item
+                                input#demo-todolist-3.magic-checkbox(type='checkbox')
+                                label(for='demo-todolist-3')
+                                    span Read the book
+                            li.list-group-item
+                                input#demo-todolist-4.magic-checkbox(type='checkbox')
+                                label(for='demo-todolist-4')
+                                    span
+                                        span.label.label-warning Warning
+                            li.list-group-item
+                                input#demo-todolist-5.magic-checkbox(type='checkbox', checked='')
+                                label(for='demo-todolist-5')
+                                    span
+                                        span.label.label-info 2 Mins
+                    .input-group.pad-all
+                        input.form-control(type='text', placeholder='New task', autocomplete='off')
+                        span.input-group-btn
+                            button.btn.btn-success(type='button')
+                                i.demo-pli-add
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // End todo list
+            .col-sm-6.col-lg-4
+                .panel.panel-trans
+                    .panel-heading
+                        .panel-control
+                            a.demo-psi-information.icon-lg.icon-fw.unselectable.text-info.add-tooltip(title='', data-html='true', data-container='body', data-original-title="<p class='h4 text-semibold'>Information</p><p style='width:150px'>This is an information bubble to help the user.</p>", href='#')
+                        h3.panel-title Services
+                    .bord-btm
+                        ul.list-group.bg-trans
+                            li.list-group-item
+                                .pull-right
+                                    input#demo-online-status-checkbox.toggle-switch(type='checkbox', checked='')
+                                    label(for='demo-online-status-checkbox')
+                            li.list-group-item
+                                .pull-right
+                                    input#demo-show-off-contact-checkbox.toggle-switch(type='checkbox', checked='')
+                                    label(for='demo-show-off-contact-checkbox')
+                            li.list-group-item
+                                .pull-right
+                                    input#demo-show-device-checkbox.toggle-switch(type='checkbox')
+                                    label(for='demo-show-device-checkbox')
+                    .panel-body
+                        .pad-btm
+                            p.text-semibold.text-main Upgrade Progress
+                            .progress.progress-md
+                                .progress-bar.progress-bar-purple(aria-valuenow='15', aria-valuemin='0', aria-valuemax='100', style='width: 15%;', role='progressbar')
+                                    span.sr-only 15%
+                            small 15% Completed
+                        div
+                            p.text-semibold.text-main Database
+                            .progress.progress-md
+                                .progress-bar.progress-bar-success(aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width: 70%;', role='progressbar')
+                                    span.sr-only 70%
+                            small 70% Completed
+            .col-sm-12.col-lg-4
+                .panel.panel-trans
+                    .pad-all
+                        .media.mar-btm
+                            .media-left
+                                img.img-md.img-circle(src='img/profile-photos/2.png', alt='Avatar')
+                            .media-body
+                                p.text-lg.text-main.text-semibold.mar-no Ralph West
+                                p Project manager
+                        blockquote.bq-sm.bq-open.bq-close
+                    .bord-top
+                        ul.list-group.bg-trans.bord-no
+                            li.list-group-item.list-item-sm
+                                .media-left
+                                    i.demo-psi-facebook.icon-lg
+                                .media-body
+                                    a.btn-link.text-semibold(href='#') Facebook
+                            li.list-group-item.list-item-sm
+                                .media-left
+                                    i.demo-psi-twitter.icon-lg
+                                .media-body
+                                    a.btn-link.text-semibold(href='#') @RalphWe
+                                    br
+                                    a.btn-link.text-bold(href='#') #Bootstrap
+                            li.list-group-item.list-item-sm
+                                .media-left
+                                    i.demo-psi-instagram.icon-lg
+                                .media-body
+                                    a.btn-link.text-semibold(href='#') Ralphz
+                            li.list-group-item.list-item-sm
+                                .media-body
+        .row
+            .col-xs-12
+                .panel
+                    .panel-heading
+                        h3.panel-title Order Status
+                    // Data Table
+                    // ===================================================
+                    .panel-body
+                        .pad-btm.form-inline
+                            .row
+                                .col-sm-6.table-toolbar-left
+                                    button.btn.btn-purple
+                                        i.demo-pli-add.icon-fw
+                                    button.btn.btn-default
+                                        i.demo-pli-printer.icon-lg
+                                    .btn-group
+                                        button.btn.btn-default
+                                            i.demo-pli-information.icon-lg
+                                        button.btn.btn-default
+                                            i.demo-pli-trash.icon-lg
+                                .col-sm-6.table-toolbar-right
+                                    .form-group
+                                        input#demo-input-search2.form-control(type='text', autocomplete='off', placeholder='Search')
+                                    .btn-group
+                                        button.btn.btn-default
+                                            i.demo-pli-download-from-cloud.icon-lg
+                                        .btn-group.dropdown
+                                            button.btn.btn-default.btn-active-primary.dropdown-toggle(data-toggle='dropdown')
+                                                i.demo-pli-dot-vertical.icon-lg
+                                            ul.dropdown-menu.dropdown-menu-right(role='menu')
+                                                li
+                                                    a(href='#') Action
+                                                li
+                                                    a(href='#') Another action
+                                                li
+                                                    a(href='#') Something else here
+                                                li.divider
+                                                li
+                                                    a(href='#') Separated link
+                        .table-responsive
+                            table.table.table-striped
+                                thead
+                                    tr
+                                        th Invoice
+                                        th User
+                                        th Order date
+                                        th Amount
+                                        th.text-center Status
+                                        th.text-center Tracking Number
+                                tbody
+                                    tr
+                                        td
+                                            a.btn-link(href='#')  Order #53431
+                                        td Steve N. Horton
+                                        td
+                                            span.text-muted Oct 22, 2014
+                                        td $45.00
+                                        td.text-center
+                                            .label.label-table.label-success Paid
+                                        td.text-center -
+                                    tr
+                                        td
+                                            a.btn-link(href='#')  Order #53432
+                                        td Charles S Boyle
+                                        td
+                                            span.text-muted Oct 24, 2014
+                                        td $245.30
+                                        td.text-center
+                                            .label.label-table.label-info Shipped
+                                        td.text-center CGX0089734531
+                                    tr
+                                        td
+                                            a.btn-link(href='#')  Order #53433
+                                        td Lucy Doe
+                                        td
+                                            span.text-muted Oct 24, 2014
+                                        td $38.00
+                                        td.text-center
+                                            .label.label-table.label-info Shipped
+                                        td.text-center CGX0089934571
+                                    tr
+                                        td
+                                            a.btn-link(href='#')  Order #53434
+                                        td Teresa L. Doe
+                                        td
+                                            span.text-muted Oct 15, 2014
+                                        td $77.99
+                                        td.text-center
+                                            .label.label-table.label-info Shipped
+                                        td.text-center CGX0089734574
+                                    tr
+                                        td
+                                            a.btn-link(href='#')  Order #53435
+                                        td Teresa L. Doe
+                                        td
+                                            span.text-muted Oct 12, 2014
+                                        td $18.00
+                                        td.text-center
+                                            .label.label-table.label-success Paid
+                                        td.text-center -
+                                    tr
+                                        td
+                                            a.btn-link(href='#') Order #53437
+                                        td Charles S Boyle
+                                        td
+                                            span.text-muted Oct 17, 2014
+                                        td $658.00
+                                        td.text-center
+                                            .label.label-table.label-danger Refunded
+                                        td.text-center -
+                                    tr
+                                        td
+                                            a.btn-link(href='#') Order #536584
+                                        td Scott S. Calabrese
+                                        td
+                                            span.text-muted Oct 19, 2014
+                                        td $45.58
+                                        td.text-center
+                                            .label.label-table.label-warning Unpaid
+                                        td.text-center -
+                        hr.new-section-xs
+                        .pull-right
+                            ul.pagination.text-nowrap.mar-no
+                                li.page-pre.disabled
+                                    a(href='#') &lt;
+                                li.page-number.active
+                                    span 1
+                                li.page-number
+                                    a(href='#') 2
+                                li.page-number
+                                    a(href='#') 3
+                                li
+                                    span ...
+                                li.page-number
+                                    a(href='#') 9
+                                li.page-next
+                                    a(href='#') &gt;
+                    // ===================================================
+                    // End Data Table
+    // ===================================================
+    // End page content
+// ===================================================
+// END CONTENT CONTAINER

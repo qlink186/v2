@@ -1,0 +1,482 @@
+// MAIN NAVIGATION
+// ===================================================
+nav#mainnav-container
+    #mainnav
+        // OPTIONAL : ADD YOUR LOGO TO THE NAVIGATION
+        // It will only appear on small screen devices.
+        //
+            ================================
+            <div class="mainnav-brand">
+            <a href="index.html" class="brand">
+            <img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
+            <span class="brand-text">Nifty</span>
+            </a>
+            <a href="#" class="mainnav-toggle"><i class="pci-cross pci-circle icon-lg"></i></a>
+            </div>
+        // Menu
+        // ================================
+        #mainnav-menu-wrap
+            .nano
+                .nano-content
+                    // Profile Widget
+                    // ================================
+                    #mainnav-profile.mainnav-profile
+                        .profile-wrap.text-center
+                            .pad-btm
+                                img.img-circle.img-md(src=base_url+'assets/nifty/img/profile-photos/1.png', alt='Profile Picture')
+                            a.box-block(href='#profile-nav', data-toggle='collapse', aria-expanded='false')
+                                span.pull-right.dropdown-toggle
+                                    i.dropdown-caret
+                                p.mnp-name Aaron Chavez
+                                span.mnp-desc aaron.cha@themeon.net
+                        #profile-nav.collapse.list-group.bg-trans
+                            a.list-group-item(href='#')
+                                i.demo-pli-male.icon-lg.icon-fw
+                            a.list-group-item(href='#')
+                                i.demo-pli-gear.icon-lg.icon-fw
+                            a.list-group-item(href='#')
+                                i.demo-pli-information.icon-lg.icon-fw
+                            a.list-group-item(href='#')
+                                i.demo-pli-unlock.icon-lg.icon-fw
+                    // Shortcut buttons
+                    // ================================
+                    #mainnav-shortcut.hidden
+                        ul.list-unstyled.shortcut-wrap
+                            li.col-xs-3(data-content='My Profile')
+                                a.shortcut-grid(href='#')
+                                    .icon-wrap.icon-wrap-sm.icon-circle.bg-mint
+                                        i.demo-pli-male
+                            li.col-xs-3(data-content='Messages')
+                                a.shortcut-grid(href='#')
+                                    .icon-wrap.icon-wrap-sm.icon-circle.bg-warning
+                                        i.demo-pli-speech-bubble-3
+                            li.col-xs-3(data-content='Activity')
+                                a.shortcut-grid(href='#')
+                                    .icon-wrap.icon-wrap-sm.icon-circle.bg-success
+                                        i.demo-pli-thunder
+                            li.col-xs-3(data-content='Lock Screen')
+                                a.shortcut-grid(href='#')
+                                    .icon-wrap.icon-wrap-sm.icon-circle.bg-purple
+                                        i.demo-pli-lock-2
+                    // ================================
+                    // End shortcut buttons
+                    ul#mainnav-menu.list-group
+                        // Category name
+                        li.list-header Navigation
+                        // Menu list item
+                        li.active-sub
+                            a(href='#')
+                                i.demo-pli-home
+                                span.menu-title Dashboard
+                                i.arrow
+                            // Submenu
+                            ul.collapse.in
+                                li.active-link
+                                    a(href='index.html') Dashboard 1
+                                li
+                                    a(href='dashboard-2.html') Dashboard 2
+                                li
+                                    a(href='dashboard-3.html') Dashboard 3
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-split-vertical-2
+                                span.menu-title Layouts
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='layouts-collapsed-navigation.html') Collapsed Navigation
+                                li
+                                    a(href='layouts-offcanvas-navigation.html') Off-Canvas Navigation
+                                li
+                                    a(href='layouts-offcanvas-slide-in-navigation.html') Slide-in Navigation
+                                li
+                                    a(href='layouts-offcanvas-revealing-navigation.html') Revealing Navigation
+                                li.list-divider
+                                li
+                                    a(href='layouts-aside-right-side.html') Aside on the right side
+                                li
+                                    a(href='layouts-aside-left-side.html') Aside on the left side
+                                li
+                                    a(href='layouts-aside-dark-theme.html') Dark version of aside
+                                li.list-divider
+                                li
+                                    a(href='layouts-fixed-navbar.html') Fixed Navbar
+                                li
+                                    a(href='layouts-fixed-footer.html') Fixed Footer
+                        // Menu list item
+                        li
+                            a(href='widgets.html')
+                                i.demo-pli-gear
+                                span.menu-title
+                                    span.pull-right.badge.badge-warning 24
+                        li.list-divider
+                        // Category name
+                        li.list-header Components
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-boot-2
+                                span.menu-title UI Elements
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='ui-buttons.html') Buttons
+                                li
+                                    a(href='ui-panels.html') Panels
+                                li
+                                    a(href='ui-modals.html') Modals
+                                li
+                                    a(href='ui-progress-bars.html') Progress bars
+                                li
+                                    a(href='ui-components.html') Components
+                                li
+                                    a(href='ui-typography.html') Typography
+                                li
+                                    a(href='ui-list-group.html') List Group
+                                li
+                                    a(href='ui-tabs-accordions.html') Tabs &amp; Accordions
+                                li
+                                    a(href='ui-alerts-tooltips.html') Alerts &amp; Tooltips
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-pen-5
+                                span.menu-title Forms
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='forms-general.html') General
+                                li
+                                    a(href='forms-components.html') Advanced Components
+                                li
+                                    a(href='forms-validation.html') Validation
+                                li
+                                    a(href='forms-wizard.html') Wizard
+                                li
+                                    a(href='forms-file-upload.html') File Upload
+                                li
+                                    a(href='forms-text-editor.html') Text Editor
+                                li
+                                    a(href='forms-markdown.html') Markdown
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-receipt-4
+                                span.menu-title Tables
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='tables-static.html') Static Tables
+                                li
+                                    a(href='tables-bootstrap.html') Bootstrap Tables
+                                li
+                                    a(href='tables-datatable.html') Data Tables
+                                li
+                                    a(href='tables-footable.html') Foo Tables
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-bar-chart
+                                span.menu-title Charts
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='charts-morris-js.html') Morris JS
+                                li
+                                    a(href='charts-flot-charts.html') Flot Charts
+                                li
+                                    a(href='charts-easy-pie-charts.html') Easy Pie Charts
+                                li
+                                    a(href='charts-sparklines.html') Sparklines
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-repair
+                                span.menu-title Miscellaneous
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='misc-timeline.html') Timeline
+                                li
+                                    a(href='misc-maps.html') Google Maps
+                                li
+                                    a(href='xplugins-notifications.html')
+                                        span.label.label-purple.pull-right Improved
+                                li
+                                    a(href='misc-nestable-list.html') Nestable List
+                                li
+                                    a(href='misc-animate-css.html') CSS Animations
+                                li
+                                    a(href='misc-css-loaders.html') CSS Loaders
+                                li
+                                    a(href='misc-spinkit.html') Spinkit
+                                li
+                                    a(href='misc-tree-view.html') Tree View
+                                li
+                                    a(href='misc-clipboard.html') Clipboard
+                                li
+                                    a(href='misc-x-editable.html') X-Editable
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-warning-window
+                                span.menu-title Grid System
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='grid-bootstrap.html') Bootstrap Grid
+                                li
+                                    a(href='grid-liquid-fixed.html') Liquid Fixed
+                                li
+                                    a(href='grid-match-height.html') Match Height
+                                li
+                                    a(href='grid-masonry.html') Masonry
+                        li.list-divider
+                        // Category name
+                        li.list-header More
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-computer-secure
+                                span.menu-title App Views
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='app-file-manager.html') File Manager
+                                li
+                                    a(href='app-users.html') Users
+                                li
+                                    a(href='app-users-2.html') Users 2
+                                li
+                                    a(href='app-profile.html') Profile
+                                li
+                                    a(href='app-calendar.html') Calendar
+                                li
+                                    a(href='app-taskboard.html') Taskboard
+                                li
+                                    a(href='app-chat.html') Chat
+                                li
+                                    a(href='app-contact-us.html') Contact Us
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-speech-bubble-5
+                                span.menu-title Blog Apps
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='blog.html') Blog
+                                li
+                                    a(href='blog-list.html') Blog List
+                                li
+                                    a(href='blog-list-2.html') Blog List 2
+                                li
+                                    a(href='blog-details.html') Blog Details
+                                li.list-divider
+                                li
+                                    a(href='blog-manage-posts.html') Manage Posts
+                                li
+                                    a(href='blog-add-edit-post.html') Add Edit Post
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-mail
+                                span.menu-title Email
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='mailbox.html') Inbox
+                                li
+                                    a(href='mailbox-message.html') View Message
+                                li
+                                    a(href='mailbox-compose.html') Compose Message
+                                li
+                                    a(href='mailbox-templates.html') Email Templates
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-file-html
+                                span.menu-title Other Pages
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='pages-blank.html') Blank Page
+                                li
+                                    a(href='pages-invoice.html') Invoice
+                                li
+                                    a(href='pages-search-results.html') Search Results
+                                li
+                                    a(href='pages-faq.html') FAQ
+                                li
+                                    a(href='pages-pricing.html')
+                                        span.label.label-success.pull-right New
+                                li.list-divider
+                                li
+                                    a(href='pages-404-alt.html') Error 404 alt
+                                li
+                                    a(href='pages-500-alt.html') Error 500 alt
+                                li.list-divider
+                                li
+                                    a(href='pages-404.html') Error 404 
+                                li
+                                    a(href='pages-500.html') Error 500
+                                li
+                                    a(href='pages-maintenance.html') Maintenance
+                                li
+                                    a(href='pages-login.html') Login
+                                li
+                                    a(href='pages-register.html') Register
+                                li
+                                    a(href='pages-password-reminder.html') Password Reminder
+                                li
+                                    a(href='pages-lock-screen.html') Lock Screen
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-photo-2
+                                span.menu-title Gallery
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='gallery-columns.html') Columns
+                                li
+                                    a(href='gallery-justified.html') Justified
+                                li
+                                    a(href='gallery-nested.html') Nested
+                                li
+                                    a(href='gallery-grid.html') Grid
+                                li
+                                    a(href='gallery-carousel.html') Carousel
+                                li.list-divider
+                                li
+                                    a(href='gallery-slider.html') Slider
+                                li
+                                    a(href='gallery-default-theme.html') Default Theme
+                                li
+                                    a(href='gallery-compact-theme.html') Compact Theme
+                                li
+                                    a(href='gallery-grid-theme.html') Grid Theme
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-tactic
+                                span.menu-title Menu Level
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='#') Second Level Item
+                                li
+                                    a(href='#') Second Level Item
+                                li
+                                    a(href='#') Second Level Item
+                                li.list-divider
+                                li
+                                    a(href='#')
+                                        i.arrow
+                                    // Submenu
+                                    ul.collapse
+                                        li
+                                            a(href='#') Third Level Item
+                                        li
+                                            a(href='#') Third Level Item
+                                        li
+                                            a(href='#') Third Level Item
+                                        li
+                                            a(href='#') Third Level Item
+                                li
+                                    a(href='#')
+                                        i.arrow
+                                    // Submenu
+                                    ul.collapse
+                                        li
+                                            a(href='#') Third Level Item
+                                        li
+                                            a(href='#') Third Level Item
+                                        li.list-divider
+                                        li
+                                            a(href='#') Third Level Item
+                                        li
+                                            a(href='#') Third Level Item
+                        li.list-divider
+                        // Category name
+                        li.list-header Extras
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-happy
+                                span.menu-title Icons Pack
+                                i.arrow
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='icons-ionicons.html') Ion Icons
+                                li
+                                    a(href='icons-themify.html') Themify
+                                li
+                                    a(href='icons-font-awesome.html') Font Awesome
+                                li
+                                    a(href='icons-flagicons.html') Flag Icon CSS
+                                li
+                                    a(href='icons-weather-icons.html') Weather Icons
+                        // Menu list item
+                        li
+                            a(href='#')
+                                i.demo-pli-medal-2
+                                span.menu-title
+                                    span.label.label-danger.pull-right BEST
+                            // Submenu
+                            ul.collapse
+                                li
+                                    a(href='premium-line-icons.html') Line Icons Pack
+                                li
+                                    a(href='premium-solid-icons.html') Solid Icons Pack
+                        // Menu list item
+                        li
+                            a(href='helper-classes.html')
+                                i.demo-pli-inbox-full
+                                span.menu-title Helper Classes
+                    // Widget
+                    // ================================
+                    .mainnav-widget
+                        // Show the button on collapsed navigation
+                        .show-small
+                            a(href='#', data-toggle='menu-widget', data-target='#demo-wg-server')
+                                i.demo-pli-monitor-2
+                        // Hide the content on collapsed navigation
+                        #demo-wg-server.hide-small.mainnav-widget-content
+                            ul.list-group
+                                li.list-header.pad-no.mar-ver Server Status
+                                li.mar-btm
+                                    span.label.label-primary.pull-right 15%
+                                    p CPU Usage
+                                    .progress.progress-sm
+                                        .progress-bar.progress-bar-primary(style='width: 15%;')
+                                            span.sr-only 15%
+                                li.mar-btm
+                                    span.label.label-purple.pull-right 75%
+                                    p Bandwidth
+                                    .progress.progress-sm
+                                        .progress-bar.progress-bar-purple(style='width: 75%;')
+                                            span.sr-only 75%
+                                li.pad-ver
+                                    a.btn.btn-success.btn-bock(href='#') View Details
+                    // ================================
+                    // End widget
+        // ================================
+        // End menu
+// ===================================================
+// END MAIN NAVIGATION
